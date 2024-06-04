@@ -3,3 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#library {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#library div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
