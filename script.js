@@ -19,15 +19,14 @@ function addBookToLibrary() {
   let title = prompt("Enter the title of the book:");
   let author = prompt("Enter the author of the book:");
   let pages = prompt("Enter the number of pages:");
-  let read =
-    prompt("Have you read this book? (yes/no)").toLowerCase();
+  let read = prompt("Have you read this book? (yes/no)").toLowerCase();
 
   let newBook = new books(title, author, pages, read);
   myLibrary.push(newBook);
   displayLibrary();
 }
 
-addBookToLibrary();
+// addBookToLibrary();
 
 function displayLibrary() {
   const titleDiv = document.getElementById("title");
@@ -52,3 +51,24 @@ function displayLibrary() {
     readDiv.appendChild(reads);
   });
 }
+
+function isSquare(number) {
+  if (number < 0) return false;
+  for (let i = 0; i * i <= number; i++) {
+    if (i * i === number) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(isSquare(6));
+
+let result = [];
+function commonChars(string) {
+  for (let i = 0; i < string.length; i++) {
+    for (let j = 0; j < string.length; j++){
+      
+        }
+  }
+}
+console.log(commonChars(["cool", "lock", "cook"]));
